@@ -3,7 +3,7 @@ import mysql.connector as connector
 
 class DBconnect:
     def __init__(self):
-        self.con=connector.connect(host='localhost',port=3306,user='root',password='UBNqaly W;8b&>{',database='pythontest',auth_plugin='mysql_native_password')
+        self.con=connector.connect(host='localhost',port=3306,user='root',password='YOUR PASSWORD GOES HERE',database='YOUR DATABASE NAME',auth_plugin='mysql_native_password')
 
         query='create table if not exists users(ID int primary key, Name varchar(20), Address varchar(20), Contact_Number bigint)'
 
